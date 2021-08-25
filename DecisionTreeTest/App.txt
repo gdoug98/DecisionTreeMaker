@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.6.1" />
+    </startup>
+  <appSettings>
+    <add key="DefaultColour" value="#FF0000FF"/>
+    <add key="DefaultOutline" value="#FFFFA500"/>
+    <add key="OutlineThickness" value="2.5"/>
+    <add key="AddButtonColour" value="#FF008000"/>
+    <add key="RemoveButtonColour" value="#FF8B0000"/>
+    <add key="ConnectorColour" value="#00000000"/>
+    <add key="ConnectorThickness" value="2.5"/>
+    <add key="DefaultBoundingRectSize" value="180,72"/>
+    <add key="DefaultPadding" value="20,20"/>
+    <add key="BodyButtonRatio" value="5"/>
+    <add key="DefaultBodyShape" value="Ellipse"/>
+    <add key="ButtonShape" value="Triangle"/>
+    <add key="DefaultTextColour" value="#FFA9A9A9"/>
+    <add key="DefaultTreeSaveDirectory" value="*"/>
+  </appSettings>
+</configuration>
