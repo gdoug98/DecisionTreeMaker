@@ -1,0 +1,39 @@
+﻿<Window x:Class="DecisionTreeTest.WalkthroughWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DecisionTreeTest"
+        mc:Ignorable="d"
+        Title="Walkthrough" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="9*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ItemsControl Grid.Column="0" Name="lstNodes">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Title}"></TextBlock>
+                        <Rectangle Fill="{Binding Fill}" Stroke="Black" StrokeThickness="2" Width="20" Height="20" Margin="10 10 10 10"></Rectangle>
+                    </StackPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <ListBox Grid.Column="1" Name="lstActions" SelectionChanged="cmdAction_Click">
+            <!--<ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <EventSetter Event="Selected" Handler="cmdAction_Click"/>
+                </Style>
+            </ListBox.ItemContainerStyle>-->
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal"  Margin="10 10 10 10">
+                        <TextBlock Text="{Binding Action}" Width="200" Height="65"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

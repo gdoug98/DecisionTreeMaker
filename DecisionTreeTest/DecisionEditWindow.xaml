@@ -1,0 +1,25 @@
+﻿<Window x:Class="DecisionTreeTest.DecisionEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DecisionTreeTest"
+        mc:Ignorable="d"
+        Title="Edit Node" Height="450" Width="800" Closing="Window_Closing">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="9*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical" Grid.Column="0">
+            <TextBlock Height="50" Text="Title" Name="lblTitle"></TextBlock>
+            <TextBlock Height="50" Text="Description" Name="lblDescription"></TextBlock>
+            <TextBlock Height="50" Text="Actions" Name="lblActions"></TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Column="1">
+            <TextBox Height="50" Name="txtTitle"></TextBox>
+            <TextBox Height="50" Name="txtDescription"></TextBox>
+            <ListBox Height="200" Name="lbActions"></ListBox>
+        </StackPanel>
+    </Grid>
+</Window>

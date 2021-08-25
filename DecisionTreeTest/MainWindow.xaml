@@ -1,0 +1,30 @@
+﻿<Window x:Class="DecisionTreeTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DecisionTreeTest"
+        xmlns:ui="clr-namespace:DecisionTreeTest.UI"
+        mc:Ignorable="d"
+        Title="Decision Tree Designer v1.0" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="6*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ToolBar>
+            <Button Name="cmdSave" Click="_saveButton_Click">
+                <Image Source="./Resources/Images/Save.png" Width="30" Height="30" Margin="10 10 10 10" ToolTip="Save this decision tree"></Image>
+            </Button>
+            <Button Name="cmdLoad" Click="_loadButton_Click">
+                <Image Source="./Resources/Images/Load.png" Width="30" Height="30" Margin="10 10 10 10" ToolTip="Load a decision tree from file"></Image>
+            </Button>
+            <Button Name="cmdWalkthrough" Click="CmdWalkthrough_Click">
+                <Image Source="./Resources/Images/Walkthrough.png" Width="30" Height="30" Margin="10 10 10 10" ToolTip="Go to walkthrough mode"></Image>
+            </Button>
+        </ToolBar>
+        <Canvas x:Name="_canvas" Background="AliceBlue" ClipToBounds="True" Grid.Row="1">
+            
+        </Canvas>
+    </Grid>
+</Window>
